@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+
+    <script>
+        (function () {
+          var lang = navigator.language || navigator.userLanguage;
+          if (!lang) return;
+
+          lang = lang.toLowerCase();
+
+          if (lang.startsWith('de')) {
+            window.location.replace('/de/');
+          } else if (lang.startsWith('tr')) {
+            window.location.replace('/tr/');
+          } else if (lang.startsWith('ar')) {
+            window.location.replace('/ar/');
+          } else {
+            window.location.replace('/en/');
+          }
+        })();
+    </script>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+
+<p>
+    Please select your language:
+</p>
+
+<ul>
+    <li><a href="/de/">Deutsch</a></li>
+    <li><a href="/en/">English</a></li>
+    <li><a href="/tr/">Türkçe</a></li>
+    <li><a href="/ar/">العربية</a></li>
+</ul>
+
+<noscript>
+    <p>
+        JavaScript is disabled. Please choose your language manually.
+    </p>
+</noscript>
+
+<hr>
+<p><em>This page only redirects to the appropriate language version of the privacy policy.</em></p>
+
+</body>
+</html>
